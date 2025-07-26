@@ -12,9 +12,10 @@ namespace Solver {
      * @brief Enumeration of supported solver types
      */
     enum class SolverType {
-        LU,        // LU factorization
-        Cholesky,  // Cholesky factorization (for symmetric positive definite matrices)
-        QR         // QR factorization
+        LU,           // LU factorization
+        Cholesky,     // Cholesky factorization (for symmetric positive definite matrices)
+        QR,           // QR factorization
+        Multifrontal  // Multifrontal method
     };
 
     /**
@@ -42,6 +43,7 @@ namespace Solver {
         /**
          * @brief Analyze the matrix structure for preprocessing
          */
+        virtual void etreeConstr() = 0;
         virtual void analyzePattern() = 0;
 
         /**

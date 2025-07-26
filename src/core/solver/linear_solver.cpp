@@ -1,4 +1,5 @@
 #include "linear_solver.hpp"
+#include "multifrontal_solver.hpp"
 #include "core/factorization/lu_factorization.hpp"
 #include "core/matrix/csr_matrix.hpp"
 #include <stdexcept>
@@ -9,7 +10,6 @@ namespace Solver {
 
     // Forward declaration of concrete solver implementations
     class LUSolver;
-
     /**
      * @brief Concrete implementation of LinearSolver using LU factorization
      */
@@ -23,6 +23,10 @@ namespace Solver {
         
         void setMatrix(std::unique_ptr<SparseMatrix> matrix) override {
             matrix_ = std::move(matrix);
+        }
+        
+        void etreeConstr() override {
+            // For LU solver, no special elimination tree construction needed
         }
         
         void analyzePattern() override {
@@ -89,6 +93,8 @@ namespace Solver {
                 throw std::runtime_error("Cholesky solver not implemented yet");
             case SolverType::QR:
                 throw std::runtime_error("QR solver not implemented yet");
+            case SolverType::Multifrontal:
+                return createMultifrontalSolver();
             default:
                 throw std::invalid_argument("Unknown solver type");
         }
