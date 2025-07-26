@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/cmake_install.cmake",
+		"/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/core/cmake_install.cmake",
+		"/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/supernodal/cmake_install.cmake",
+		"/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/multifrontal/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

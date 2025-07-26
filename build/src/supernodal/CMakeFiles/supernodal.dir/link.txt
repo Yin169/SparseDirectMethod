@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsupernodal.a CMakeFiles/supernodal.dir/SupernodalMethod.cpp.o
+/usr/bin/ranlib libsupernodal.a
