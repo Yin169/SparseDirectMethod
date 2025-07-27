@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/parallel_test_sparse_direct_method.dir/parallel_test.cpp.o -o parallel_test_sparse_direct_method  libSparseDirectMethod.a

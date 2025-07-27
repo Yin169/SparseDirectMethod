@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/correctness_test_sparse_direct_method.dir/correctness_test.cpp.o -o correctness_test_sparse_direct_method  libSparseDirectMethod.a
