@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SparseDirectMethods
+CMAKE_PROJECT_NAME:STATIC=SparseDirectMethod
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -213,20 +213,8 @@ CMAKE_TAPI:FILEPATH=/Users/yincheangng/opt/anaconda3/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//CXX compiler flags for OpenMP parallelization
-OpenMP_CXX_FLAGS:STRING=NOTFOUND
-
-//CXX compiler libraries for OpenMP parallelization
-OpenMP_CXX_LIB_NAMES:STRING=NOTFOUND
-
-//C compiler flags for OpenMP parallelization
-OpenMP_C_FLAGS:STRING=NOTFOUND
-
-//C compiler libraries for OpenMP parallelization
-OpenMP_C_LIB_NAMES:STRING=NOTFOUND
-
-//Path to a library.
-OpenMP_libomp_LIBRARY:FILEPATH=OpenMP_libomp_LIBRARY-NOTFOUND
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/opt/homebrew/share/eigen3/cmake
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -235,75 +223,19 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 
 //Value Computed by CMake
-SparseDirectMethods_BINARY_DIR:STATIC=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build
+SparseDirectMethod_BINARY_DIR:STATIC=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build
 
 //Value Computed by CMake
-SparseDirectMethods_IS_TOP_LEVEL:STATIC=ON
+SparseDirectMethod_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-SparseDirectMethods_SOURCE_DIR:STATIC=/Users/yincheangng/worksapce/Github/SparseDirectMethod
-
-//The directory containing a CMake configuration file for SuiteSparse.
-SuiteSparse_DIR:PATH=SuiteSparse_DIR-NOTFOUND
-
-//Dependencies for the target
-core_LIB_DEPENDS:STATIC=general;openblas;
-
-//Dependencies for the target
-multifrontal_LIB_DEPENDS:STATIC=general;core;general;openblas;general;/opt/homebrew/opt/libomp/lib/libomp.dylib;
-
-//Path to a library.
-pkgcfg_lib_CHOLMOD_cholmod:FILEPATH=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib/libcholmod.dylib
-
-//Path to a library.
-pkgcfg_lib_OPENBLAS_openblas:FILEPATH=/opt/homebrew/Cellar/openblas/0.3.30/lib/libopenblas.dylib
-
-//Path to a library.
-pkgcfg_lib_UMFPACK_umfpack:FILEPATH=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib/libumfpack.dylib
-
-//Dependencies for the target
-supernodal_LIB_DEPENDS:STATIC=general;core;general;openblas;
+SparseDirectMethod_SOURCE_DIR:STATIC=/Users/yincheangng/worksapce/Github/SparseDirectMethod
 
 
 ########################
 # INTERNAL cache entries
 ########################
 
-CHOLMOD_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-CHOLMOD_CFLAGS_I:INTERNAL=
-CHOLMOD_CFLAGS_OTHER:INTERNAL=
-CHOLMOD_FOUND:INTERNAL=1
-CHOLMOD_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-CHOLMOD_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-CHOLMOD_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/suite-sparse/7.11.0/lib;-lcholmod
-CHOLMOD_LDFLAGS_OTHER:INTERNAL=
-CHOLMOD_LIBDIR:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-CHOLMOD_LIBRARIES:INTERNAL=cholmod
-CHOLMOD_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-CHOLMOD_LIBS:INTERNAL=
-CHOLMOD_LIBS_L:INTERNAL=
-CHOLMOD_LIBS_OTHER:INTERNAL=
-CHOLMOD_LIBS_PATHS:INTERNAL=
-CHOLMOD_MODULE_NAME:INTERNAL=cholmod
-CHOLMOD_PREFIX:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0
-CHOLMOD_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-CHOLMOD_STATIC_CFLAGS_I:INTERNAL=
-CHOLMOD_STATIC_CFLAGS_OTHER:INTERNAL=
-CHOLMOD_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-CHOLMOD_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/suite-sparse/7.11.0/lib;-lcholmod;-lomp;-lAccelete.framework;-lAccelete.framework;-lAccelete.framework;-lamd;-lm;-lcolamd;-lm;-lcamd;-lm;-lccolamd;-lm;-lsuitesparseconfig;-lomp
-CHOLMOD_STATIC_LDFLAGS_OTHER:INTERNAL=
-CHOLMOD_STATIC_LIBDIR:INTERNAL=
-CHOLMOD_STATIC_LIBRARIES:INTERNAL=cholmod;omp;Accelete.framework;Accelete.framework;Accelete.framework;amd;m;colamd;m;camd;m;ccolamd;m;suitesparseconfig;omp
-CHOLMOD_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-CHOLMOD_STATIC_LIBS:INTERNAL=
-CHOLMOD_STATIC_LIBS_L:INTERNAL=
-CHOLMOD_STATIC_LIBS_OTHER:INTERNAL=
-CHOLMOD_STATIC_LIBS_PATHS:INTERNAL=
-CHOLMOD_VERSION:INTERNAL=5.3.4
-CHOLMOD_cholmod_INCLUDEDIR:INTERNAL=
-CHOLMOD_cholmod_LIBDIR:INTERNAL=
-CHOLMOD_cholmod_PREFIX:INTERNAL=
-CHOLMOD_cholmod_VERSION:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -376,6 +308,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/yincheangng/worksapce/Github/SparseDirectMethod
@@ -400,7 +334,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -445,121 +379,50 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][ ][v5.1()]
-//Details about finding OpenMP_C
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include][/opt/homebrew/opt/libomp/lib/libomp.dylib][v5.1()]
-//Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include][/opt/homebrew/opt/libomp/lib/libomp.dylib][v5.1()]
+EIGEN3_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3
+EIGEN3_CFLAGS_I:INTERNAL=
+EIGEN3_CFLAGS_OTHER:INTERNAL=
+EIGEN3_FOUND:INTERNAL=1
+EIGEN3_INCLUDEDIR:INTERNAL=
+EIGEN3_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3
+EIGEN3_LDFLAGS:INTERNAL=
+EIGEN3_LDFLAGS_OTHER:INTERNAL=
+EIGEN3_LIBDIR:INTERNAL=
+EIGEN3_LIBRARIES:INTERNAL=
+EIGEN3_LIBRARY_DIRS:INTERNAL=
+EIGEN3_LIBS:INTERNAL=
+EIGEN3_LIBS_L:INTERNAL=
+EIGEN3_LIBS_OTHER:INTERNAL=
+EIGEN3_LIBS_PATHS:INTERNAL=
+EIGEN3_MODULE_NAME:INTERNAL=eigen3
+EIGEN3_PREFIX:INTERNAL=/opt/homebrew/Cellar/eigen/3.4.0_1
+EIGEN3_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3
+EIGEN3_STATIC_CFLAGS_I:INTERNAL=
+EIGEN3_STATIC_CFLAGS_OTHER:INTERNAL=
+EIGEN3_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3
+EIGEN3_STATIC_LDFLAGS:INTERNAL=
+EIGEN3_STATIC_LDFLAGS_OTHER:INTERNAL=
+EIGEN3_STATIC_LIBDIR:INTERNAL=
+EIGEN3_STATIC_LIBRARIES:INTERNAL=
+EIGEN3_STATIC_LIBRARY_DIRS:INTERNAL=
+EIGEN3_STATIC_LIBS:INTERNAL=
+EIGEN3_STATIC_LIBS_L:INTERNAL=
+EIGEN3_STATIC_LIBS_OTHER:INTERNAL=
+EIGEN3_STATIC_LIBS_PATHS:INTERNAL=
+EIGEN3_VERSION:INTERNAL=3.4.0
+EIGEN3_eigen3_INCLUDEDIR:INTERNAL=
+EIGEN3_eigen3_LIBDIR:INTERNAL=
+EIGEN3_eigen3_PREFIX:INTERNAL=
+EIGEN3_eigen3_VERSION:INTERNAL=
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v2.5.1()]
-OPENBLAS_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/openblas/0.3.30/include;-fopenmp
-OPENBLAS_CFLAGS_I:INTERNAL=
-OPENBLAS_CFLAGS_OTHER:INTERNAL=-fopenmp
-OPENBLAS_FOUND:INTERNAL=1
-OPENBLAS_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/include
-OPENBLAS_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/include
-OPENBLAS_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/openblas/0.3.30/lib;-lopenblas
-OPENBLAS_LDFLAGS_OTHER:INTERNAL=
-OPENBLAS_LIBDIR:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/lib
-OPENBLAS_LIBRARIES:INTERNAL=openblas
-OPENBLAS_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/lib
-OPENBLAS_LIBS:INTERNAL=
-OPENBLAS_LIBS_L:INTERNAL=
-OPENBLAS_LIBS_OTHER:INTERNAL=
-OPENBLAS_LIBS_PATHS:INTERNAL=
-OPENBLAS_MODULE_NAME:INTERNAL=openblas
-OPENBLAS_PREFIX:INTERNAL=
-OPENBLAS_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/openblas/0.3.30/include;-fopenmp
-OPENBLAS_STATIC_CFLAGS_I:INTERNAL=
-OPENBLAS_STATIC_CFLAGS_OTHER:INTERNAL=-fopenmp
-OPENBLAS_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/include
-OPENBLAS_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/openblas/0.3.30/lib;-lopenblas;-lpthread;-lgfortran;-lpthread;-lgfortran;-lgomp
-OPENBLAS_STATIC_LDFLAGS_OTHER:INTERNAL=
-OPENBLAS_STATIC_LIBDIR:INTERNAL=
-OPENBLAS_STATIC_LIBRARIES:INTERNAL=openblas;pthread;gfortran;pthread;gfortran;gomp
-OPENBLAS_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/lib
-OPENBLAS_STATIC_LIBS:INTERNAL=
-OPENBLAS_STATIC_LIBS_L:INTERNAL=
-OPENBLAS_STATIC_LIBS_OTHER:INTERNAL=
-OPENBLAS_STATIC_LIBS_PATHS:INTERNAL=
-OPENBLAS_VERSION:INTERNAL=0.3.30
-OPENBLAS_openblas_INCLUDEDIR:INTERNAL=
-OPENBLAS_openblas_LIBDIR:INTERNAL=
-OPENBLAS_openblas_PREFIX:INTERNAL=
-OPENBLAS_openblas_VERSION:INTERNAL=
-//Result of TRY_COMPILE
-OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp:INTERNAL=FALSE
-//Result of TRY_COMPILE
-OpenMP_COMPILE_RESULT_C_Xclang fopenmp:INTERNAL=FALSE
-//ADVANCED property for variable: OpenMP_CXX_FLAGS
-OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
-OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
-//CXX compiler's OpenMP specification date
-OpenMP_CXX_SPEC_DATE:INTERNAL=202011
-//ADVANCED property for variable: OpenMP_C_FLAGS
-OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_C_LIB_NAMES
-OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
-//C compiler's OpenMP specification date
-OpenMP_C_SPEC_DATE:INTERNAL=202011
-//Result of TRY_COMPILE
-OpenMP_SPECTEST_CXX_:INTERNAL=TRUE
-//Result of TRY_COMPILE
-OpenMP_SPECTEST_C_:INTERNAL=TRUE
-//ADVANCED property for variable: OpenMP_libomp_LIBRARY
-OpenMP_libomp_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-UMFPACK_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-UMFPACK_CFLAGS_I:INTERNAL=
-UMFPACK_CFLAGS_OTHER:INTERNAL=
-UMFPACK_FOUND:INTERNAL=1
-UMFPACK_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-UMFPACK_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-UMFPACK_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/suite-sparse/7.11.0/lib;-lumfpack
-UMFPACK_LDFLAGS_OTHER:INTERNAL=
-UMFPACK_LIBDIR:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-UMFPACK_LIBRARIES:INTERNAL=umfpack
-UMFPACK_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-UMFPACK_LIBS:INTERNAL=
-UMFPACK_LIBS_L:INTERNAL=
-UMFPACK_LIBS_OTHER:INTERNAL=
-UMFPACK_LIBS_PATHS:INTERNAL=
-UMFPACK_MODULE_NAME:INTERNAL=umfpack
-UMFPACK_PREFIX:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0
-UMFPACK_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-UMFPACK_STATIC_CFLAGS_I:INTERNAL=
-UMFPACK_STATIC_CFLAGS_OTHER:INTERNAL=
-UMFPACK_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/include/suitesparse
-UMFPACK_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/suite-sparse/7.11.0/lib;-lumfpack;-lAccelete.framework;-lcholmod;-lomp;-lAccelete.framework;-lAccelete.framework;-lAccelete.framework;-lamd;-lm;-lcolamd;-lm;-lcamd;-lm;-lccolamd;-lm;-lsuitesparseconfig;-lomp
-UMFPACK_STATIC_LDFLAGS_OTHER:INTERNAL=
-UMFPACK_STATIC_LIBDIR:INTERNAL=
-UMFPACK_STATIC_LIBRARIES:INTERNAL=umfpack;Accelete.framework;cholmod;omp;Accelete.framework;Accelete.framework;Accelete.framework;amd;m;colamd;m;camd;m;ccolamd;m;suitesparseconfig;omp
-UMFPACK_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/suite-sparse/7.11.0/lib
-UMFPACK_STATIC_LIBS:INTERNAL=
-UMFPACK_STATIC_LIBS_L:INTERNAL=
-UMFPACK_STATIC_LIBS_OTHER:INTERNAL=
-UMFPACK_STATIC_LIBS_PATHS:INTERNAL=
-UMFPACK_VERSION:INTERNAL=6.3.6
-UMFPACK_umfpack_INCLUDEDIR:INTERNAL=
-UMFPACK_umfpack_LIBDIR:INTERNAL=
-UMFPACK_umfpack_PREFIX:INTERNAL=
-UMFPACK_umfpack_VERSION:INTERNAL=
-__pkg_config_arguments_CHOLMOD:INTERNAL=REQUIRED;cholmod
-__pkg_config_arguments_OPENBLAS:INTERNAL=REQUIRED;openblas
-__pkg_config_arguments_UMFPACK:INTERNAL=REQUIRED;umfpack
-__pkg_config_checked_CHOLMOD:INTERNAL=1
-__pkg_config_checked_OPENBLAS:INTERNAL=1
-__pkg_config_checked_UMFPACK:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_CHOLMOD_cholmod
-pkgcfg_lib_CHOLMOD_cholmod-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_OPENBLAS_openblas
-pkgcfg_lib_OPENBLAS_openblas-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_UMFPACK_umfpack
-pkgcfg_lib_UMFPACK_umfpack-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/opt/homebrew/Cellar/openblas/0.3.30/lib
+__pkg_config_arguments_EIGEN3:INTERNAL=REQUIRED;eigen3
+__pkg_config_checked_EIGEN3:INTERNAL=1
+prefix_result:INTERNAL=
 

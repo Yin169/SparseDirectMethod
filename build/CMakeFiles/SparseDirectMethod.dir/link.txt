@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSparseDirectMethod.a CMakeFiles/SparseDirectMethod.dir/SparseDirectMethod.cpp.o
+/usr/bin/ranlib libSparseDirectMethod.a

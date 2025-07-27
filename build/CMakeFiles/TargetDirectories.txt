@@ -1,12 +1,4 @@
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles/sparse_direct_methods.dir
+/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles/SparseDirectMethod.dir
+/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles/test_sparse_direct_method.dir
 /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles/edit_cache.dir
 /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles/rebuild_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/core/CMakeFiles/core.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/core/CMakeFiles/edit_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/core/CMakeFiles/rebuild_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/supernodal/CMakeFiles/supernodal.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/supernodal/CMakeFiles/edit_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/supernodal/CMakeFiles/rebuild_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/multifrontal/CMakeFiles/multifrontal.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/multifrontal/CMakeFiles/edit_cache.dir
-/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/src/multifrontal/CMakeFiles/rebuild_cache.dir

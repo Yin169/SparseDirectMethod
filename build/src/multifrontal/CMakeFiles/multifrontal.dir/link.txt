@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmultifrontal.a CMakeFiles/multifrontal.dir/MultifrontalMethod.cpp.o CMakeFiles/multifrontal.dir/ParallelMultifrontalMethod.cpp.o
-/usr/bin/ranlib libmultifrontal.a

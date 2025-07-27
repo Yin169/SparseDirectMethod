@@ -11,9 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.0.1/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeSystem.cmake"
-  "/Users/yincheangng/worksapce/Github/SparseDirectMethod/src/core/CMakeLists.txt"
-  "/Users/yincheangng/worksapce/Github/SparseDirectMethod/src/multifrontal/CMakeLists.txt"
-  "/Users/yincheangng/worksapce/Github/SparseDirectMethod/src/supernodal/CMakeLists.txt"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -27,9 +24,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake"
-  "/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-  "/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake"
-  "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -47,6 +41,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/opt/homebrew/share/eigen3/cmake/Eigen3Config.cmake"
+  "/opt/homebrew/share/eigen3/cmake/Eigen3ConfigVersion.cmake"
+  "/opt/homebrew/share/eigen3/cmake/Eigen3Targets.cmake"
   )
 
 # The corresponding makefile is:
@@ -58,15 +55,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/core/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/supernodal/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/multifrontal/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sparse_direct_methods.dir/DependInfo.cmake"
-  "src/core/CMakeFiles/core.dir/DependInfo.cmake"
-  "src/supernodal/CMakeFiles/supernodal.dir/DependInfo.cmake"
-  "src/multifrontal/CMakeFiles/multifrontal.dir/DependInfo.cmake"
+  "CMakeFiles/SparseDirectMethod.dir/DependInfo.cmake"
+  "CMakeFiles/test_sparse_direct_method.dir/DependInfo.cmake"
   )

@@ -63,218 +63,87 @@ CMAKE_BINARY_DIR = /Users/yincheangng/worksapce/Github/SparseDirectMethod/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/sparse_direct_methods.dir/all
-all: src/core/all
-all: src/supernodal/all
-all: src/multifrontal/all
+all: CMakeFiles/SparseDirectMethod.dir/all
+all: CMakeFiles/test_sparse_direct_method.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/sparse_direct_methods.dir/codegen
-codegen: src/core/codegen
-codegen: src/supernodal/codegen
-codegen: src/multifrontal/codegen
+codegen: CMakeFiles/SparseDirectMethod.dir/codegen
+codegen: CMakeFiles/test_sparse_direct_method.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: src/core/preinstall
-preinstall: src/supernodal/preinstall
-preinstall: src/multifrontal/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/sparse_direct_methods.dir/clean
-clean: src/core/clean
-clean: src/supernodal/clean
-clean: src/multifrontal/clean
+clean: CMakeFiles/SparseDirectMethod.dir/clean
+clean: CMakeFiles/test_sparse_direct_method.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src/core
-
-# Recursive "all" directory target.
-src/core/all: src/core/CMakeFiles/core.dir/all
-.PHONY : src/core/all
-
-# Recursive "codegen" directory target.
-src/core/codegen: src/core/CMakeFiles/core.dir/codegen
-.PHONY : src/core/codegen
-
-# Recursive "preinstall" directory target.
-src/core/preinstall:
-.PHONY : src/core/preinstall
-
-# Recursive "clean" directory target.
-src/core/clean: src/core/CMakeFiles/core.dir/clean
-.PHONY : src/core/clean
-
-#=============================================================================
-# Directory level rules for directory src/multifrontal
-
-# Recursive "all" directory target.
-src/multifrontal/all: src/multifrontal/CMakeFiles/multifrontal.dir/all
-.PHONY : src/multifrontal/all
-
-# Recursive "codegen" directory target.
-src/multifrontal/codegen: src/multifrontal/CMakeFiles/multifrontal.dir/codegen
-.PHONY : src/multifrontal/codegen
-
-# Recursive "preinstall" directory target.
-src/multifrontal/preinstall:
-.PHONY : src/multifrontal/preinstall
-
-# Recursive "clean" directory target.
-src/multifrontal/clean: src/multifrontal/CMakeFiles/multifrontal.dir/clean
-.PHONY : src/multifrontal/clean
-
-#=============================================================================
-# Directory level rules for directory src/supernodal
-
-# Recursive "all" directory target.
-src/supernodal/all: src/supernodal/CMakeFiles/supernodal.dir/all
-.PHONY : src/supernodal/all
-
-# Recursive "codegen" directory target.
-src/supernodal/codegen: src/supernodal/CMakeFiles/supernodal.dir/codegen
-.PHONY : src/supernodal/codegen
-
-# Recursive "preinstall" directory target.
-src/supernodal/preinstall:
-.PHONY : src/supernodal/preinstall
-
-# Recursive "clean" directory target.
-src/supernodal/clean: src/supernodal/CMakeFiles/supernodal.dir/clean
-.PHONY : src/supernodal/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/sparse_direct_methods.dir
+# Target rules for target CMakeFiles/SparseDirectMethod.dir
 
 # All Build rule for target.
-CMakeFiles/sparse_direct_methods.dir/all: src/core/CMakeFiles/core.dir/all
-CMakeFiles/sparse_direct_methods.dir/all: src/supernodal/CMakeFiles/supernodal.dir/all
-CMakeFiles/sparse_direct_methods.dir/all: src/multifrontal/CMakeFiles/multifrontal.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=6,7 "Built target sparse_direct_methods"
-.PHONY : CMakeFiles/sparse_direct_methods.dir/all
+CMakeFiles/SparseDirectMethod.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=1,2 "Built target SparseDirectMethod"
+.PHONY : CMakeFiles/SparseDirectMethod.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sparse_direct_methods.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sparse_direct_methods.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 0
-.PHONY : CMakeFiles/sparse_direct_methods.dir/rule
-
-# Convenience name for target.
-sparse_direct_methods: CMakeFiles/sparse_direct_methods.dir/rule
-.PHONY : sparse_direct_methods
-
-# codegen rule for target.
-CMakeFiles/sparse_direct_methods.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=6,7 "Finished codegen for target sparse_direct_methods"
-.PHONY : CMakeFiles/sparse_direct_methods.dir/codegen
-
-# clean rule for target.
-CMakeFiles/sparse_direct_methods.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/clean
-.PHONY : CMakeFiles/sparse_direct_methods.dir/clean
-
-#=============================================================================
-# Target rules for target src/core/CMakeFiles/core.dir
-
-# All Build rule for target.
-src/core/CMakeFiles/core.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=1,2 "Built target core"
-.PHONY : src/core/CMakeFiles/core.dir/all
-
-# Build rule for subdir invocation for target.
-src/core/CMakeFiles/core.dir/rule: cmake_check_build_system
+CMakeFiles/SparseDirectMethod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SparseDirectMethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 0
-.PHONY : src/core/CMakeFiles/core.dir/rule
+.PHONY : CMakeFiles/SparseDirectMethod.dir/rule
 
 # Convenience name for target.
-core: src/core/CMakeFiles/core.dir/rule
-.PHONY : core
+SparseDirectMethod: CMakeFiles/SparseDirectMethod.dir/rule
+.PHONY : SparseDirectMethod
 
 # codegen rule for target.
-src/core/CMakeFiles/core.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=1,2 "Finished codegen for target core"
-.PHONY : src/core/CMakeFiles/core.dir/codegen
+CMakeFiles/SparseDirectMethod.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=1,2 "Finished codegen for target SparseDirectMethod"
+.PHONY : CMakeFiles/SparseDirectMethod.dir/codegen
 
 # clean rule for target.
-src/core/CMakeFiles/core.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/clean
-.PHONY : src/core/CMakeFiles/core.dir/clean
+CMakeFiles/SparseDirectMethod.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/clean
+.PHONY : CMakeFiles/SparseDirectMethod.dir/clean
 
 #=============================================================================
-# Target rules for target src/supernodal/CMakeFiles/supernodal.dir
+# Target rules for target CMakeFiles/test_sparse_direct_method.dir
 
 # All Build rule for target.
-src/supernodal/CMakeFiles/supernodal.dir/all: src/core/CMakeFiles/core.dir/all
-	$(MAKE) $(MAKESILENT) -f src/supernodal/CMakeFiles/supernodal.dir/build.make src/supernodal/CMakeFiles/supernodal.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/supernodal/CMakeFiles/supernodal.dir/build.make src/supernodal/CMakeFiles/supernodal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=8,9 "Built target supernodal"
-.PHONY : src/supernodal/CMakeFiles/supernodal.dir/all
+CMakeFiles/test_sparse_direct_method.dir/all: CMakeFiles/SparseDirectMethod.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=3,4 "Built target test_sparse_direct_method"
+.PHONY : CMakeFiles/test_sparse_direct_method.dir/all
 
 # Build rule for subdir invocation for target.
-src/supernodal/CMakeFiles/supernodal.dir/rule: cmake_check_build_system
+CMakeFiles/test_sparse_direct_method.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/supernodal/CMakeFiles/supernodal.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_sparse_direct_method.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 0
-.PHONY : src/supernodal/CMakeFiles/supernodal.dir/rule
+.PHONY : CMakeFiles/test_sparse_direct_method.dir/rule
 
 # Convenience name for target.
-supernodal: src/supernodal/CMakeFiles/supernodal.dir/rule
-.PHONY : supernodal
+test_sparse_direct_method: CMakeFiles/test_sparse_direct_method.dir/rule
+.PHONY : test_sparse_direct_method
 
 # codegen rule for target.
-src/supernodal/CMakeFiles/supernodal.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/supernodal/CMakeFiles/supernodal.dir/build.make src/supernodal/CMakeFiles/supernodal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=8,9 "Finished codegen for target supernodal"
-.PHONY : src/supernodal/CMakeFiles/supernodal.dir/codegen
+CMakeFiles/test_sparse_direct_method.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=3,4 "Finished codegen for target test_sparse_direct_method"
+.PHONY : CMakeFiles/test_sparse_direct_method.dir/codegen
 
 # clean rule for target.
-src/supernodal/CMakeFiles/supernodal.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/supernodal/CMakeFiles/supernodal.dir/build.make src/supernodal/CMakeFiles/supernodal.dir/clean
-.PHONY : src/supernodal/CMakeFiles/supernodal.dir/clean
-
-#=============================================================================
-# Target rules for target src/multifrontal/CMakeFiles/multifrontal.dir
-
-# All Build rule for target.
-src/multifrontal/CMakeFiles/multifrontal.dir/all: src/core/CMakeFiles/core.dir/all
-	$(MAKE) $(MAKESILENT) -f src/multifrontal/CMakeFiles/multifrontal.dir/build.make src/multifrontal/CMakeFiles/multifrontal.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/multifrontal/CMakeFiles/multifrontal.dir/build.make src/multifrontal/CMakeFiles/multifrontal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=3,4,5 "Built target multifrontal"
-.PHONY : src/multifrontal/CMakeFiles/multifrontal.dir/all
-
-# Build rule for subdir invocation for target.
-src/multifrontal/CMakeFiles/multifrontal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/multifrontal/CMakeFiles/multifrontal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles 0
-.PHONY : src/multifrontal/CMakeFiles/multifrontal.dir/rule
-
-# Convenience name for target.
-multifrontal: src/multifrontal/CMakeFiles/multifrontal.dir/rule
-.PHONY : multifrontal
-
-# codegen rule for target.
-src/multifrontal/CMakeFiles/multifrontal.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/multifrontal/CMakeFiles/multifrontal.dir/build.make src/multifrontal/CMakeFiles/multifrontal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/yincheangng/worksapce/Github/SparseDirectMethod/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target multifrontal"
-.PHONY : src/multifrontal/CMakeFiles/multifrontal.dir/codegen
-
-# clean rule for target.
-src/multifrontal/CMakeFiles/multifrontal.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/multifrontal/CMakeFiles/multifrontal.dir/build.make src/multifrontal/CMakeFiles/multifrontal.dir/clean
-.PHONY : src/multifrontal/CMakeFiles/multifrontal.dir/clean
+CMakeFiles/test_sparse_direct_method.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/clean
+.PHONY : CMakeFiles/test_sparse_direct_method.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

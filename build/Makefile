@@ -117,80 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sparse_direct_methods
+# Target rules for targets named SparseDirectMethod
 
 # Build rule for target.
-sparse_direct_methods: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sparse_direct_methods
-.PHONY : sparse_direct_methods
+SparseDirectMethod: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SparseDirectMethod
+.PHONY : SparseDirectMethod
 
 # fast build rule for target.
-sparse_direct_methods/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/build
-.PHONY : sparse_direct_methods/fast
+SparseDirectMethod/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/build
+.PHONY : SparseDirectMethod/fast
 
 #=============================================================================
-# Target rules for targets named core
+# Target rules for targets named test_sparse_direct_method
 
 # Build rule for target.
-core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core
-.PHONY : core
+test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sparse_direct_method
+.PHONY : test_sparse_direct_method
 
 # fast build rule for target.
-core/fast:
-	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/build
-.PHONY : core/fast
+test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/build
+.PHONY : test_sparse_direct_method/fast
 
-#=============================================================================
-# Target rules for targets named supernodal
-
-# Build rule for target.
-supernodal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 supernodal
-.PHONY : supernodal
-
-# fast build rule for target.
-supernodal/fast:
-	$(MAKE) $(MAKESILENT) -f src/supernodal/CMakeFiles/supernodal.dir/build.make src/supernodal/CMakeFiles/supernodal.dir/build
-.PHONY : supernodal/fast
-
-#=============================================================================
-# Target rules for targets named multifrontal
-
-# Build rule for target.
-multifrontal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multifrontal
-.PHONY : multifrontal
-
-# fast build rule for target.
-multifrontal/fast:
-	$(MAKE) $(MAKESILENT) -f src/multifrontal/CMakeFiles/multifrontal.dir/build.make src/multifrontal/CMakeFiles/multifrontal.dir/build
-.PHONY : multifrontal/fast
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+SparseDirectMethod.o: SparseDirectMethod.cpp.o
+.PHONY : SparseDirectMethod.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+SparseDirectMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/SparseDirectMethod.cpp.o
+.PHONY : SparseDirectMethod.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+SparseDirectMethod.i: SparseDirectMethod.cpp.i
+.PHONY : SparseDirectMethod.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+SparseDirectMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/SparseDirectMethod.cpp.i
+.PHONY : SparseDirectMethod.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+SparseDirectMethod.s: SparseDirectMethod.cpp.s
+.PHONY : SparseDirectMethod.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sparse_direct_methods.dir/build.make CMakeFiles/sparse_direct_methods.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+SparseDirectMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/SparseDirectMethod.cpp.s
+.PHONY : SparseDirectMethod.cpp.s
+
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -200,13 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... core"
-	@echo "... multifrontal"
-	@echo "... sparse_direct_methods"
-	@echo "... supernodal"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... SparseDirectMethod"
+	@echo "... test_sparse_direct_method"
+	@echo "... SparseDirectMethod.o"
+	@echo "... SparseDirectMethod.i"
+	@echo "... SparseDirectMethod.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
