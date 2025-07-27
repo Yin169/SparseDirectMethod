@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/final_correct_demo.dir/final_correct_demo.cpp.o -o final_correct_demo

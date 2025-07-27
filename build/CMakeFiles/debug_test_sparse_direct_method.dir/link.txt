@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/debug_test_sparse_direct_method.dir/debug_test.cpp.o -o debug_test_sparse_direct_method  libSparseDirectMethod.a

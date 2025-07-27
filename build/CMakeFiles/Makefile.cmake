@@ -61,4 +61,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/SparseDirectMethod.dir/DependInfo.cmake"
   "CMakeFiles/test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/large_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/fem_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/parallel_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/multifrontal_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/correctness_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/demo_test_sparse_direct_method.dir/DependInfo.cmake"
+  "CMakeFiles/correct_sparse_solver.dir/DependInfo.cmake"
+  "CMakeFiles/final_correct_demo.dir/DependInfo.cmake"
   )

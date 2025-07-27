@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/large_test_sparse_direct_method.dir/large_test.cpp.o -o large_test_sparse_direct_method  libSparseDirectMethod.a

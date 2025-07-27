@@ -142,6 +142,110 @@ test_sparse_direct_method/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sparse_direct_method.dir/build.make CMakeFiles/test_sparse_direct_method.dir/build
 .PHONY : test_sparse_direct_method/fast
 
+#=============================================================================
+# Target rules for targets named large_test_sparse_direct_method
+
+# Build rule for target.
+large_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 large_test_sparse_direct_method
+.PHONY : large_test_sparse_direct_method
+
+# fast build rule for target.
+large_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/large_test_sparse_direct_method.dir/build.make CMakeFiles/large_test_sparse_direct_method.dir/build
+.PHONY : large_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named fem_test_sparse_direct_method
+
+# Build rule for target.
+fem_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fem_test_sparse_direct_method
+.PHONY : fem_test_sparse_direct_method
+
+# fast build rule for target.
+fem_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fem_test_sparse_direct_method.dir/build.make CMakeFiles/fem_test_sparse_direct_method.dir/build
+.PHONY : fem_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named parallel_test_sparse_direct_method
+
+# Build rule for target.
+parallel_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parallel_test_sparse_direct_method
+.PHONY : parallel_test_sparse_direct_method
+
+# fast build rule for target.
+parallel_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_test_sparse_direct_method.dir/build.make CMakeFiles/parallel_test_sparse_direct_method.dir/build
+.PHONY : parallel_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named multifrontal_test_sparse_direct_method
+
+# Build rule for target.
+multifrontal_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multifrontal_test_sparse_direct_method
+.PHONY : multifrontal_test_sparse_direct_method
+
+# fast build rule for target.
+multifrontal_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multifrontal_test_sparse_direct_method.dir/build.make CMakeFiles/multifrontal_test_sparse_direct_method.dir/build
+.PHONY : multifrontal_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named correctness_test_sparse_direct_method
+
+# Build rule for target.
+correctness_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correctness_test_sparse_direct_method
+.PHONY : correctness_test_sparse_direct_method
+
+# fast build rule for target.
+correctness_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test_sparse_direct_method.dir/build.make CMakeFiles/correctness_test_sparse_direct_method.dir/build
+.PHONY : correctness_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named demo_test_sparse_direct_method
+
+# Build rule for target.
+demo_test_sparse_direct_method: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_test_sparse_direct_method
+.PHONY : demo_test_sparse_direct_method
+
+# fast build rule for target.
+demo_test_sparse_direct_method/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_test_sparse_direct_method.dir/build.make CMakeFiles/demo_test_sparse_direct_method.dir/build
+.PHONY : demo_test_sparse_direct_method/fast
+
+#=============================================================================
+# Target rules for targets named correct_sparse_solver
+
+# Build rule for target.
+correct_sparse_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correct_sparse_solver
+.PHONY : correct_sparse_solver
+
+# fast build rule for target.
+correct_sparse_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correct_sparse_solver.dir/build.make CMakeFiles/correct_sparse_solver.dir/build
+.PHONY : correct_sparse_solver/fast
+
+#=============================================================================
+# Target rules for targets named final_correct_demo
+
+# Build rule for target.
+final_correct_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 final_correct_demo
+.PHONY : final_correct_demo
+
+# fast build rule for target.
+final_correct_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_correct_demo.dir/build.make CMakeFiles/final_correct_demo.dir/build
+.PHONY : final_correct_demo/fast
+
 SparseDirectMethod.o: SparseDirectMethod.cpp.o
 .PHONY : SparseDirectMethod.o
 
@@ -165,6 +269,198 @@ SparseDirectMethod.s: SparseDirectMethod.cpp.s
 SparseDirectMethod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SparseDirectMethod.dir/build.make CMakeFiles/SparseDirectMethod.dir/SparseDirectMethod.cpp.s
 .PHONY : SparseDirectMethod.cpp.s
+
+correct_sparse_solver.o: correct_sparse_solver.cpp.o
+.PHONY : correct_sparse_solver.o
+
+# target to build an object file
+correct_sparse_solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correct_sparse_solver.dir/build.make CMakeFiles/correct_sparse_solver.dir/correct_sparse_solver.cpp.o
+.PHONY : correct_sparse_solver.cpp.o
+
+correct_sparse_solver.i: correct_sparse_solver.cpp.i
+.PHONY : correct_sparse_solver.i
+
+# target to preprocess a source file
+correct_sparse_solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correct_sparse_solver.dir/build.make CMakeFiles/correct_sparse_solver.dir/correct_sparse_solver.cpp.i
+.PHONY : correct_sparse_solver.cpp.i
+
+correct_sparse_solver.s: correct_sparse_solver.cpp.s
+.PHONY : correct_sparse_solver.s
+
+# target to generate assembly for a file
+correct_sparse_solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correct_sparse_solver.dir/build.make CMakeFiles/correct_sparse_solver.dir/correct_sparse_solver.cpp.s
+.PHONY : correct_sparse_solver.cpp.s
+
+correctness_test.o: correctness_test.cpp.o
+.PHONY : correctness_test.o
+
+# target to build an object file
+correctness_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test_sparse_direct_method.dir/build.make CMakeFiles/correctness_test_sparse_direct_method.dir/correctness_test.cpp.o
+.PHONY : correctness_test.cpp.o
+
+correctness_test.i: correctness_test.cpp.i
+.PHONY : correctness_test.i
+
+# target to preprocess a source file
+correctness_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test_sparse_direct_method.dir/build.make CMakeFiles/correctness_test_sparse_direct_method.dir/correctness_test.cpp.i
+.PHONY : correctness_test.cpp.i
+
+correctness_test.s: correctness_test.cpp.s
+.PHONY : correctness_test.s
+
+# target to generate assembly for a file
+correctness_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test_sparse_direct_method.dir/build.make CMakeFiles/correctness_test_sparse_direct_method.dir/correctness_test.cpp.s
+.PHONY : correctness_test.cpp.s
+
+demo_test.o: demo_test.cpp.o
+.PHONY : demo_test.o
+
+# target to build an object file
+demo_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_test_sparse_direct_method.dir/build.make CMakeFiles/demo_test_sparse_direct_method.dir/demo_test.cpp.o
+.PHONY : demo_test.cpp.o
+
+demo_test.i: demo_test.cpp.i
+.PHONY : demo_test.i
+
+# target to preprocess a source file
+demo_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_test_sparse_direct_method.dir/build.make CMakeFiles/demo_test_sparse_direct_method.dir/demo_test.cpp.i
+.PHONY : demo_test.cpp.i
+
+demo_test.s: demo_test.cpp.s
+.PHONY : demo_test.s
+
+# target to generate assembly for a file
+demo_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_test_sparse_direct_method.dir/build.make CMakeFiles/demo_test_sparse_direct_method.dir/demo_test.cpp.s
+.PHONY : demo_test.cpp.s
+
+fem_test.o: fem_test.cpp.o
+.PHONY : fem_test.o
+
+# target to build an object file
+fem_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fem_test_sparse_direct_method.dir/build.make CMakeFiles/fem_test_sparse_direct_method.dir/fem_test.cpp.o
+.PHONY : fem_test.cpp.o
+
+fem_test.i: fem_test.cpp.i
+.PHONY : fem_test.i
+
+# target to preprocess a source file
+fem_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fem_test_sparse_direct_method.dir/build.make CMakeFiles/fem_test_sparse_direct_method.dir/fem_test.cpp.i
+.PHONY : fem_test.cpp.i
+
+fem_test.s: fem_test.cpp.s
+.PHONY : fem_test.s
+
+# target to generate assembly for a file
+fem_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fem_test_sparse_direct_method.dir/build.make CMakeFiles/fem_test_sparse_direct_method.dir/fem_test.cpp.s
+.PHONY : fem_test.cpp.s
+
+final_correct_demo.o: final_correct_demo.cpp.o
+.PHONY : final_correct_demo.o
+
+# target to build an object file
+final_correct_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_correct_demo.dir/build.make CMakeFiles/final_correct_demo.dir/final_correct_demo.cpp.o
+.PHONY : final_correct_demo.cpp.o
+
+final_correct_demo.i: final_correct_demo.cpp.i
+.PHONY : final_correct_demo.i
+
+# target to preprocess a source file
+final_correct_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_correct_demo.dir/build.make CMakeFiles/final_correct_demo.dir/final_correct_demo.cpp.i
+.PHONY : final_correct_demo.cpp.i
+
+final_correct_demo.s: final_correct_demo.cpp.s
+.PHONY : final_correct_demo.s
+
+# target to generate assembly for a file
+final_correct_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_correct_demo.dir/build.make CMakeFiles/final_correct_demo.dir/final_correct_demo.cpp.s
+.PHONY : final_correct_demo.cpp.s
+
+large_test.o: large_test.cpp.o
+.PHONY : large_test.o
+
+# target to build an object file
+large_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/large_test_sparse_direct_method.dir/build.make CMakeFiles/large_test_sparse_direct_method.dir/large_test.cpp.o
+.PHONY : large_test.cpp.o
+
+large_test.i: large_test.cpp.i
+.PHONY : large_test.i
+
+# target to preprocess a source file
+large_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/large_test_sparse_direct_method.dir/build.make CMakeFiles/large_test_sparse_direct_method.dir/large_test.cpp.i
+.PHONY : large_test.cpp.i
+
+large_test.s: large_test.cpp.s
+.PHONY : large_test.s
+
+# target to generate assembly for a file
+large_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/large_test_sparse_direct_method.dir/build.make CMakeFiles/large_test_sparse_direct_method.dir/large_test.cpp.s
+.PHONY : large_test.cpp.s
+
+multifrontal_test.o: multifrontal_test.cpp.o
+.PHONY : multifrontal_test.o
+
+# target to build an object file
+multifrontal_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multifrontal_test_sparse_direct_method.dir/build.make CMakeFiles/multifrontal_test_sparse_direct_method.dir/multifrontal_test.cpp.o
+.PHONY : multifrontal_test.cpp.o
+
+multifrontal_test.i: multifrontal_test.cpp.i
+.PHONY : multifrontal_test.i
+
+# target to preprocess a source file
+multifrontal_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multifrontal_test_sparse_direct_method.dir/build.make CMakeFiles/multifrontal_test_sparse_direct_method.dir/multifrontal_test.cpp.i
+.PHONY : multifrontal_test.cpp.i
+
+multifrontal_test.s: multifrontal_test.cpp.s
+.PHONY : multifrontal_test.s
+
+# target to generate assembly for a file
+multifrontal_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multifrontal_test_sparse_direct_method.dir/build.make CMakeFiles/multifrontal_test_sparse_direct_method.dir/multifrontal_test.cpp.s
+.PHONY : multifrontal_test.cpp.s
+
+parallel_test.o: parallel_test.cpp.o
+.PHONY : parallel_test.o
+
+# target to build an object file
+parallel_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_test_sparse_direct_method.dir/build.make CMakeFiles/parallel_test_sparse_direct_method.dir/parallel_test.cpp.o
+.PHONY : parallel_test.cpp.o
+
+parallel_test.i: parallel_test.cpp.i
+.PHONY : parallel_test.i
+
+# target to preprocess a source file
+parallel_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_test_sparse_direct_method.dir/build.make CMakeFiles/parallel_test_sparse_direct_method.dir/parallel_test.cpp.i
+.PHONY : parallel_test.cpp.i
+
+parallel_test.s: parallel_test.cpp.s
+.PHONY : parallel_test.s
+
+# target to generate assembly for a file
+parallel_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_test_sparse_direct_method.dir/build.make CMakeFiles/parallel_test_sparse_direct_method.dir/parallel_test.cpp.s
+.PHONY : parallel_test.cpp.s
 
 test.o: test.cpp.o
 .PHONY : test.o
@@ -199,10 +495,42 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SparseDirectMethod"
+	@echo "... correct_sparse_solver"
+	@echo "... correctness_test_sparse_direct_method"
+	@echo "... demo_test_sparse_direct_method"
+	@echo "... fem_test_sparse_direct_method"
+	@echo "... final_correct_demo"
+	@echo "... large_test_sparse_direct_method"
+	@echo "... multifrontal_test_sparse_direct_method"
+	@echo "... parallel_test_sparse_direct_method"
 	@echo "... test_sparse_direct_method"
 	@echo "... SparseDirectMethod.o"
 	@echo "... SparseDirectMethod.i"
 	@echo "... SparseDirectMethod.s"
+	@echo "... correct_sparse_solver.o"
+	@echo "... correct_sparse_solver.i"
+	@echo "... correct_sparse_solver.s"
+	@echo "... correctness_test.o"
+	@echo "... correctness_test.i"
+	@echo "... correctness_test.s"
+	@echo "... demo_test.o"
+	@echo "... demo_test.i"
+	@echo "... demo_test.s"
+	@echo "... fem_test.o"
+	@echo "... fem_test.i"
+	@echo "... fem_test.s"
+	@echo "... final_correct_demo.o"
+	@echo "... final_correct_demo.i"
+	@echo "... final_correct_demo.s"
+	@echo "... large_test.o"
+	@echo "... large_test.i"
+	@echo "... large_test.s"
+	@echo "... multifrontal_test.o"
+	@echo "... multifrontal_test.i"
+	@echo "... multifrontal_test.s"
+	@echo "... parallel_test.o"
+	@echo "... parallel_test.i"
+	@echo "... parallel_test.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
